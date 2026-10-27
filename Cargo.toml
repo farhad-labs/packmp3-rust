@@ -1,0 +1,23 @@
+[package]
+name = "packmp3"
+version = "1.0.0"
+edition = "2021"
+description = "Rust port of packMP3: lossless further-compression of MPEG-1 Audio Layer III files (PMP format)"
+license = "LGPL-3.0-or-later"
+
+[lib]
+name = "packmp3"
+path = "src/lib.rs"
+
+[[bin]]
+name = "packmp3"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[profile.dev]
+opt-level = 1

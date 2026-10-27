@@ -1,0 +1,20 @@
+# build output
+/target
+
+# media test data / generated containers (copyrighted or large)
+*.mp3
+*.pmp
+
+# local scratch outputs from development runs
+compress.txt
+decomp_err.txt
+decomp_out.txt
+decompress.txt
+out_v0.txt
+stderr_v0.txt
+stdout_v0.txt
+
+# editor / OS cruft
+*.swp
+.DS_Store
+Thumbs.db
